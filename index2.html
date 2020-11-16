@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  	<title>Quiz Gravity Falls</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/preguntas.js"></script>
+    <script src="./js/script.js"></script> 
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+      <div id="contenedor_principal">
+      	 <img id="imgCabaña" src="img/cabañapng.png" alt="cabaña_gravity_falls">
+      	 <div class="grid-2">
+            <h2>QUIZ</h2>
+        		<div class="img">
+        			<img src="img/Gravity_Falls_logo.png" alt="Logo Gravity Falls">
+        		</div>
+        		<div class="login">
+            		<form id="usuario">
+                  <!--<input type="text" name="nombre" id="nomb" placeholder="nombre">
+                    <p><button id="confirmar" type="submit">Confirmar nombre</button></p>-->
+                  <h3>Estas listo?</h3>
+                  <input type="button" class="comenzar_btn" value="Comenzar" onclick="ocultar_div('contenedor_principal')" >
+                </form>
+                <p class="codigo"> ELHPYHPLGRV D JUDYLWB IDOOV </p>
+            </div> 
+          </div> 
+      </div>
+      <!-- COMIENZO QUIZ -->
+      <div id="contenedor_quiz_general">
+        <div class="imagen_quiz">
+          <img id="gnomoarco" src="img/gnomo_arcoiris.png" alt="Gnomo vomi arcoir">
+        </div>
+        <div class="quiz_contenedor">
+          <div id="header">
+            <h5 >Demuestra cuanto sabes sobre Gravity Falls</h5>
+          </div>
+          <div id="section">
+            <div class="pregunta_txt">
+              <h3 id="pregunta"><!--pregunta desde js--></h3>
+            </div>
+            <div class="opciones_lista">
+              <!--<input type="radio" name="pregunta_actual" value="0"><span id="a"></span> <br>
+              <input type="radio" name="pregunta_actual" value="1"><span id="b"></span> <br>
+              <input type="radio" name="pregunta_actual" value="2"><span id="c"></span> -->
+            </div>
+            <div id="lista">
+              <form>
+                <select id="mes">
+                  <option selected>Enero</option>
+                  <option >Febrero</option>
+                  <option >Marzo</option>
+                  <option >Abril</option>
+                  <option >Mayo</option>
+                  <option >Junio</option>
+                  <option >Julio</option>
+                  <option >Agosto</option>
+                  <option >Septiembre</option>
+                  <option >Octubre</option>
+                  <option >Noviembre</option>
+                  <option >Diciembre</option>
+                </select>
+              </form>
+              <button id= "btn_finalizar" onclick="fin()">Finalizar</button>
+            </div>
+            <div id="dato">
+              <div class="dato_txt">
+                <p><!--Explicacion--></p>
+              </div>
+            </div>
+            <button id="next_btn" onclick="btn_sig()">Siguiente</button>
+          </div> 
+        </div>
+        <div class="imagen_quiz">
+          <img id="mabelbuzo" src="img/mabebuzo.png" alt="Mabel escondida buzo">
+        </div>
+      </div>
+
+     <!-- Contenedor Resultado -->
+    <div id="resultado_contenedor">
+        <div class="img" id="logo_final">
+              <img src="img/Gravity_Falls_logo.png" alt="Logo Gravity Falls">
+            </div>
+        <div class="completado_text">Felicidades <br> Haz finalizado el Quiz!</div>
+        <div class="puntos_text">
+            <p id="puntaje"></p><!-- Resultado desde JavaScript -->
+        </div>
+        <div>
+            <input type="button" class="comenzar_btn" value="Repetir Quiz" onclick="ocultar_div('resultado_contenedor')" >
+            <input type="button" class="comenzar_btn" value="Salir Quiz" onclick="btn_salir()" >
+        </div>
+    </div>
+  </body>
+</html>

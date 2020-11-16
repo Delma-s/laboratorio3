@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Tondu";
+  src: url("Tondu-Beta.woff");
+ 
+}
+@font-face {
+  
+  font-family: "joe";
+  src: url("JoeFont.woff");
+}
+#contenedor_principal{
+	display: grid;
+	grid-template-columns: 58% 39%;	
+	padding: 10px;
+}
+
+#imgCabaña{
+	margin-left: 95px;
+	width: 95%;
+	height: auto;	
+}
+
+.grid-2{		
+	font-family: Tondu;
+	color: #5B331A;
+	margin-top: 120px;
+	margin-right: 150px;
+	text-align: center;	
+	width: 76%;
+	height: auto;
+}
+
+.comenzar_btn{
+	color: #FFF;
+	background-color: #5B331A;
+	font-family: Tondu;
+	font-size: 22px;
+	text-decoration: none;
+	padding: 3%;
+	transition: background-color .5s;	
+}
+
+.comenzar_btn:hover{
+	background-color: #E8BB63;
+}
+
+
+.grid-2 h3{
+	margin-top: 15%;
+	font-size: 20px;
+}
+.grid-2 h2{
+	color: #574C50;
+}
+
+#nomb{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-color: #574C50;
+	color: #574C50;
+	margin-top: 25%;
+	font-family: Tondu;
+}
+.codigo{
+	font-family: joe;
+	font-style: italic;
+	font-size: 9pt;
+	margin-top: 12%;	
+}
+
+#contenedor_quiz_general{
+	display: none;
+  	grid-template-columns:  24% 49% 24%;
+  	padding: 100px 20px 40px 20px;
+}
+
+.quiz_contenedor{
+	background: url('../img/fondo.jpg');
+	border-radius: 5px;
+}
+
+#resultado_contenedor{
+	display: none;
+}
+
+#gnomoarco{
+	width: 64%;
+	padding: 210px 1px 3px 70px;
+}
+#mabelbuzo{
+	width: 64%;
+	padding: 170px 7px 3px 1px;
+}
+
+.quiz_contenedor #header{
+	height: 70px;
+	padding: 0 30px;
+	display: flex;
+	align-items: center;
+	justify-content:flex-end;
+	box-shadow: 0px 1px 4px 0px grey;
+}
+#header h5{
+	padding: 44px 165px 24px 17px; /*fdsgsgd*/
+	color: white;
+}
+
+
+.quiz_contenedor #section{
+	padding: 22px 17px 24px 17px;
+}
+.quiz_contenedor #section .opciones_lista{
+	padding: 24px;
+
+}
+
+.opcion{
+	font-size: 17px;
+	padding: 9px 9px 5px 5px;
+	border-radius: 2px;
+	margin-bottom: 4px;
+	width: 100%
+	border-radius:4px;
+	background: white;
+	color: black;
+
+}
+.opcion:hover{
+	cursor: pointer;
+	box-shadow: 0 0.4px 0 rgba(621, 45, 721, 1);
+	transform: scale(1.02);
+	color: white;
+	background: #1e2e3d;	
+}
+
+
+
+.pregunt{
+	padding: 0px 4px 0px 22px;
+	user-select: none;
+
+}
+
+.total-preguntas span{
+	display: flex;
+	user-select: none;
+}
+
+
+
+.pregunta_txt{
+	font-family: Tondu;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+
+}
+
+.quiz_contenedor #dato{
+	width: 60%;
+	margin-left: 15%;
+	padding: 15px 15px 15px 15px;
+	background: #1e2e3d;
+	opacity: 0.7;
+	color: white;
+}
+#next_btn{
+	padding: 6px;
+	font-size: 13px;
+	background: #823a48;
+	color: white;
+	height: 100%;
+	margin-left: 45%;
+}
+#lista{
+	display: none;
+}
+
+#lista #mes{
+	margin-left: 15%;
+	margin-top: 3%;
+}
+
+#btn_finalizar{
+	padding: 6px;
+	font-size: 15px;
+	background: #823a48;
+	color: white;	
+}
+
+#logo_final{
+	align-items: center;
+	width: 100%;
+}
+
+#resultado_contenedor{
+	
+	margin-left: 30%;
+	margin-top: 5%;
+}
